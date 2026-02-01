@@ -3,7 +3,7 @@ const morgan = require("morgan")
 const cors = require("cors")
 
 const routes = require("./route")
-const errorHandler = require("./middlewares/error.middleware")
+// const errorHandler = require("./middlewares/error.middleware")
 
 const app = express()
 
