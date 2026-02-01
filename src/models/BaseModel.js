@@ -13,4 +13,4 @@ const BaseSchema = mongoose.Schema(
     }
 )
 
-module.exports = BaseSchema
+module.exports = mongoose.model("base", BaseSchema);
