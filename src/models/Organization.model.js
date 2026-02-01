@@ -33,6 +33,6 @@ const OrganizationSchema = mongoose.Schema({
     }
 })
 
-OrganizationSchema.add(BaseSchema)
+OrganizationSchema.plugin(BaseSchema)
 
 module.exports = mongoose.model("organization", OrganizationSchema)

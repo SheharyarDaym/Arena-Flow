@@ -13,7 +13,8 @@ app.use(morgan("dev"))
 app.use(express.json())
 
 // routes
-// app.use('/api', routes)
+app.use('/api/auth', require("./routes/auth.routes"))
+
 
 // Error handling middleware
 // app.use(errorHandler)

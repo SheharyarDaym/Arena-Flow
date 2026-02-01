@@ -41,6 +41,6 @@ const UserSchema = mongoose.Schema({
 
 // merge base schema
 
-UserSchema.add(BaseSchema)
+UserSchema.plugin(BaseSchema)
 
 module.exports = mongoose.model("user", UserSchema)
