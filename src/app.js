@@ -2,7 +2,7 @@ const express = require("express")
 const morgan = require("morgan")
 const cors = require("cors")
 
-const routes = require("./route")
+const routes = require("./routes/auth.routes")
 // const errorHandler = require("./middlewares/error.middleware")
 
 const app = express()
@@ -13,7 +13,7 @@ app.use(morgan("dev"))
 app.use(express.json())
 
 // routes
-app.use('/api/auth', require("./routes/auth.routes"))
+app.use('/api/auth', routes)
 
 
 // Error handling middleware
